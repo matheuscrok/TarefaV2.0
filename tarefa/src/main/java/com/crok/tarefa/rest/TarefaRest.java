@@ -37,7 +37,7 @@ public class TarefaRest {
 	
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable("id") Integer id) {
-		
+		tarefaDao.deleteById(id);
 	}
 	
 	
